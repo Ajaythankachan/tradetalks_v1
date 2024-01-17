@@ -1,0 +1,1978 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000;
+
+    overflow-x: hidden;
+
+
+}
+
+.absolute-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+
+}
+
+.absolute-nav.scroll {
+    background-color: #000;
+    color: #eef;
+    transition: background-color 0.4s ease-out;
+}
+
+section {
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.mrg-rght {
+    margin-right: 35px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.44, #00B386),
+            color-stop(0.72, #05cf9d),
+            color-stop(0.86, #03ffc0));
+}
+
+.cmn-hd {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 64px;
+}
+
+/* .nav-link:hover {
+    color: #fff;
+    font-weight: 600;
+} */
+
+.nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.nav-item {
+    margin-right: 18px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 18px;
+}
+
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link.nav-btn {
+    border: 2px solid #00B386;
+    border-radius: 20px;
+    width: 164px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00B386;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-link.nav-btn:hover::after img {
+    transform: translateX(4px);
+}
+
+.nav-btn img {
+    margin-left: 18px;
+}
+
+/* ---------------------------------------------------banner style starts here  */
+.banner-inner {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-top: 117px;
+}
+
+.banner {
+    background-image: url('../img/banner.png');
+    background-size: 78%;
+    min-height: 100vh;
+    background-position: top right;
+    padding-top: -75px;
+    background-repeat: no-repeat;
+}
+
+.banner-right {
+    display: flex;
+}
+
+.br-left {
+    margin-right: 30px;
+}
+
+
+
+.banner-caption {
+    width: 48%;
+}
+
+/* .banner-caption h1 {
+    font-size: 90px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 900;
+    line-height: 110px;
+    margin-bottom: 84px;
+    color: #fff;
+    clip-path: polygon(0% 100%, 100% 100%,
+            100% 100%, 0% 100%);
+    opacity: 0;
+    /* transform: translateY(500px); 
+
+} */
+.main-hd {
+    font-size: 90px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 900;
+    line-height: 110px;
+    margin-bottom: 84px;
+    color: #fff;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px);
+
+}
+
+
+.banner-caption p {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+
+
+.cmn-btn {
+    border: 2px solid #00B386;
+    border-radius: 50px;
+    width: 420px;
+    font-size: 18px;
+    height: 67px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00B386;
+    transition: transform 0.3s ease-out;
+    text-decoration: none;
+}
+
+
+
+
+/* banner brm card style starts here  */
+.banner-btm {
+    border-radius: 20px;
+    background: linear-gradient(222deg, #1A1A1A 0%, #101010 100%);
+    padding: 42px 50px;
+}
+
+.banner-inner-item {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+.banner-btm .benner-btm-card-img {
+    margin: 17px auto;
+    display: block;
+}
+
+.banner-inner-item p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.cmn-btn img {
+    margin-left: 18px;
+}
+
+
+/* -------------------------------------------------------------what we offer */
+section.wat-we-ofr {
+    margin-bottom: 10px;
+    background-image: url(../img/about-bnr.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -1% -53%;
+}
+
+.sub-card {
+    border-radius: 5px;
+    border: 1px solid #00B386;
+    background: #212121;
+    padding: 55px 35px;
+    color: #fff;
+    background-image: url(../img/card-bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    min-height: 435px;
+    margin-bottom: 75px;
+    min-height: 492px;
+}
+
+.sub-card img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+.sub-card h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 18px;
+    line-height: 38px;
+    min-height: 77px;
+    display: flex;
+    align-items: center;
+}
+
+.sub-card p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 150% */
+    margin: 0;
+}
+
+
+/* ----------------------------------------------------- who we are  */
+.who-we-are {
+    background-image: url(../img/who-we-are-bg.png);
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.who-we-are h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32.151px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44.458px;
+    width: 53%;
+
+}
+
+.mission-vison-card-wrap {
+    margin-top: 160px;
+}
+
+.mv-card {}
+
+.mv-card h4 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 28px;
+}
+
+.mv-card p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    /* 170% */
+    margin-bottom: 28px;
+}
+
+.mv-card .read-more {
+    color: #00B386;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    /* 170% */
+    text-align: right;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.abt-main-card {
+    border-radius: 100px 5px;
+    border: 2px solid #FFF;
+    background: #000;
+    padding: 85px 50px;
+    margin-bottom: 58px;
+    min-height: 91%;
+}
+
+.abt-main-card.crv-right {
+    border-radius: 5px 100px;
+}
+
+.abt-main-card h4 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.abt-main-card p {
+    color: #FFF;
+
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 34px;
+    margin-bottom: 58px;
+}
+
+.abt-main-card a {
+    color: #00B386;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+
+    float: right;
+    text-decoration: none;
+}
+
+.abt-main-card a img {
+    margin-left: 15px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------- our team style starts here  */
+.team-card {}
+
+.team-card img {
+    min-height: 450px;
+    margin-bottom: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.team-card h5 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.team-card p {
+    color: #757575;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.our-team {
+    position: relative;
+    margin-bottom: 140px;
+}
+
+.team-left-absolute {
+    position: absolute;
+    top: -195px;
+}
+
+.team-right-absolute {
+    position: absolute;
+    right: 0;
+    bottom: -55px;
+}
+
+.our-tem-btm {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+/* new card section  */
+
+.cmn-card-section {
+    background-image: url(../img/new-sec.png);
+    padding: 150px 0 80px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nw-cmn-card {
+    border-radius: 5px 100px;
+    border-top: 5px solid #00B386;
+    background: #000000;
+    min-height: 375px;
+    padding: 40px;
+    margin-bottom: 30px;
+    min-height: 485px;
+}
+
+.nw-cmn-card h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.nw-cmn-card p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* ------------------------------------------------------------ contact  */
+section.contact {
+    background: #fff;
+    padding: 100px 0;
+    position: relative;
+}
+
+.contact-left {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.contact-left h3 {
+    color: #000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    color: #000;
+    margin-bottom: 20px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.contact-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.contact-right img.c-r-img {
+    width: 100%;
+}
+
+.contact-left .form-label {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+
+.contact-left input {
+    height: 40px;
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    font-size: 12px;
+}
+
+.contact-left input::placeholder {
+    color: #d9d9d977;
+    font-size: 12px;
+}
+
+.submit-btn {
+    background: #00B386;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 35px;
+    height: 40px;
+    border: none;
+}
+
+.contct-abs-img {
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+}
+
+
+/* -------------------------------------------------------- foter style starts here  */
+footer {
+    padding-bottom: 125px;
+    border-bottom: 7px solid #00B386;
+}
+
+.container.br-tp {
+    border-top: 1px solid #00B386;
+    padding-top: 86px;
+}
+
+address {
+    font-size: 16px;
+    color: #fff;
+}
+
+.f-left p {
+    color: #ffffff9e;
+    font-weight: 100;
+}
+
+.f-left img {
+    margin-bottom: 30px;
+}
+
+.f-right {
+    margin-left: auto;
+}
+
+.f-head {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.f-right ul {
+    padding: 0;
+    list-style: none;
+}
+
+.f-right li {
+    margin-bottom: 10px;
+}
+
+.f-right a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+}
+
+.f-inner-right {
+    text-align: right;
+}
+
+/* ====================================================================================== algo page starts here  */
+/* ---------------------------------------------------banner style starts here  */
+.algo-banner-inner {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-top: 117px;
+}
+
+.algo-banner {
+    background-image: url('../img/Algo/algo-banner.png');
+    background-size: 66%;
+    min-height: 100vh;
+    background-position: top right;
+    padding-top: -75px;
+    background-repeat: no-repeat;
+}
+
+.algo-banner-right {
+    display: flex;
+}
+
+.br-left {
+    margin-right: 30px;
+}
+
+
+
+.algo-banner-caption {
+    width: 55%;
+}
+
+.algo-banner-caption h1 {
+    font-size: 90px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 900;
+    line-height: 110px;
+    margin-bottom: 84px;
+    color: #fff;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px);
+
+}
+
+.algo-banner-caption p {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    color: #fff;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.algo-banner-btm {
+    border-radius: 20px;
+    background: linear-gradient(222deg, #1A1A1A 0%, #101010 100%);
+    padding: 42px 50px;
+}
+
+.algo-banner-inner-item {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+.algo-banner-btm .benner-btm-card-img {
+    margin: 17px auto;
+    display: block;
+}
+
+.algo-banner-inner-item p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.cmn-btn img {
+    margin-left: 18px;
+}
+
+
+/* ---------------------------------------------------------------- algo about section starts  */
+.algo-about .about-banner {
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.algo-about-right {
+    margin-top: 100px;
+}
+
+.algo-about {
+    position: relative;
+}
+
+.algo-about .about-abs-bg {
+    position: absolute;
+    right: 113px;
+    bottom: 50%;
+}
+
+.algo-about .algo-about-right h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 70px;
+    line-height: 60px;
+}
+
+.algo-about .algo-about-right p {
+    color: #00B386;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 42.017px;
+}
+
+
+/* ---------------------------------------------------------- feature section style starts here  */
+.feature-left {
+    position: relative
+}
+
+.feature-abs-bg {
+    position: absolute;
+    left: 0;
+    bottom: -210px;
+}
+
+.feature-left h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.feature-left p {
+    color: #00B386;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42.017px;
+}
+
+.feature-card {
+    border-radius: 5px;
+    border: 1px solid #00B386;
+    padding: 80px 45px;
+}
+
+.feature-card img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 25px;
+    width: 125px;
+}
+
+.feature-card h4 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.feature-card h2 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 40px 0;
+}
+
+/* --------------------------------------------------------------flow section style starts  */
+.flow {
+    margin: 250px 0 30px 0;
+}
+
+.flow-card {
+    border: 1px dashed #00B386;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 337px;
+    padding: 80px 50px;
+    position: relative;
+}
+
+.flow-card img {
+    position: absolute;
+    top: -54px;
+    width: 213px;
+    position: absolute;
+    transform: translate(0%, -50%);
+    left: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.flow-card ::after {
+    content: '';
+    border-top: 1px dashed #ffffff;
+    width: 236px;
+    position: absolute;
+    height: 33px;
+    top: -50px;
+    left: 312px;
+}
+
+.flow-card.last-card ::after {
+    border: none;
+    display: none;
+}
+
+.flow-card h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.flow-card p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+/* -------------------------------------------------------------- workshop style starts here  */
+.workshp-hd {
+    color: #FFF;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+
+.worksp-inner {
+    background-image: url(../img/Algo/1-1.jpg);
+    background-size: 104%;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+
+h3.wrks-main-hd {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 120px;
+}
+
+.bg-box {
+    background: #000000ba;
+    padding: 60px 40px;
+    border-radius: 8px;
+    width: 50%;
+    color: #b8b8b8;
+}
+
+.date-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+h2.wrkshp-sub-hd {
+    font-size: 30px;
+    margin: 25px 0 15px 0;
+    font-weight: 600;
+}
+
+p.wrkshp-txt {
+    font-size: 16px;
+}
+
+.dt-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.dt-item p {
+    margin: 0;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+button.wrkshp-btn {
+    background: #00B386;
+    color: #fff;
+    width: 150px;
+    height: 45px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 25px 0;
+    border: none;
+}
+
+.feature-abs {
+    position: absolute;
+    right: 0;
+    bottom: -300px;
+}
+
+.workshop {
+    padding-top: 50px;
+}
+
+.workshop {}
+
+.workshop img {
+    /* width: 100%; */
+}
+
+/* -------------------------------------------------------- Testimonials style starts here  */
+.test-item {
+    display: flex;
+    align-items: center;
+}
+
+.test-right {
+    margin-left: 130px;
+    width: 41%;
+}
+
+.owl-carousel .owl-item .test-right img {
+    width: 90px;
+    margin-bottom: 90px;
+}
+
+.test-right p {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.testimonial-content {
+    position: relative;
+}
+
+.owl-nav {
+    position: absolute;
+    left: 42%;
+    bottom: 10%;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    margin-right: 15px;
+}
+
+.algo-testimonials {
+    margin: 160px 0;
+    position: relative;
+}
+
+img.test-abs-bg {
+    position: absolute;
+    right: 113px;
+    bottom: -3%;
+}
+
+/* --------------------------------------------------------------- faq style starts here  */
+.custom-accordion.accordion-button {
+    background: none !important;
+}
+
+.faq-hd {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 80px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.accordion-button {
+    background-color: transparent;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 55px;
+    padding-left: 0;
+}
+
+section.faq {
+    margin: 50px 0 150px 0;
+    position: relative;
+}
+
+.accordion-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.accordion-body {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.accordion-button::after {
+    background-image: url(../img/Algo/plus.png);
+
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/Algo/minus.png);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+h2.accordion-header {
+    margin-top: 40px;
+}
+
+.accordion-item:last-of-type {
+    border-bottom: none;
+}
+
+section.faq {
+    margin: 50px 0 150px 0;
+    position: relative;
+}
+
+.faq-bg {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1;
+}
+
+/* --------------------------------------------------- responsive style starts here  */
+@media (max-width: 1400px) {}
+
+@media (max-width: 1025px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%
+    }
+
+    .banner-caption h1 {
+        font-size: 70px;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 900;
+        line-height: 84px;
+        margin-bottom: 41px;
+        color: #fff;
+    }
+
+    .banner-caption p {
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 35px;
+        color: #fff;
+    }
+
+    .who-we-are h3 {
+        width: 70%;
+    }
+
+    .contact-left {
+        width: 100%;
+    }
+
+    .nw-cmn-card h3 {
+        font-size: 28px;
+    }
+
+    .algo-banner-caption h1 {
+        font-size: 66px;
+        line-height: 85px;
+        margin-bottom: 67px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%
+    }
+
+    .banner-inner-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-link.nav-btn {
+        margin: 10px auto;
+    }
+
+    /* a.navbar-brand {
+                    margin: 0 auto;
+                } */
+    .absolute-nav {
+        background: #000;
+    }
+
+    .navbar-nav .nav-link.active {
+        margin-right: 0;
+    }
+
+    .nav-item {
+
+        margin: 10px 0;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .banner-btm .benner-btm-card-img {
+        margin: 17px auto;
+        display: block;
+        width: 100%;
+    }
+
+    .abt-main-card p {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 20px;
+    }
+
+    .abt-main-card {
+        border-radius: 100px 5px;
+        border: 2px solid #FFF;
+        background: #000;
+        padding: 65px 25px;
+        margin-bottom: 58px;
+    }
+
+    .sub-card {
+        min-height: 435px;
+        margin-bottom: 45px;
+        min-height: 520px;
+    }
+
+    .contact-right img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .team-card img {
+        min-height: 300px;
+        margin-bottom: 30px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 900px) {}
+
+@media (max-width: 800px) {}
+
+@media (max-width: 768px) {
+    .banner-caption {
+        width: 100%;
+        background: #0000006e;
+        padding: 38px;
+        border-radius: 5px;
+    }
+
+    .banner {
+        background-image: url(../img/banner.png);
+        background-size: 100%;
+        min-height: 100vh;
+        background-position: top right;
+        padding-top: -75px;
+        background-repeat: no-repeat;
+    }
+
+    .abt-main-card {
+        border-radius: 100px 5px;
+        border: 2px solid #FFF;
+        background: #000;
+        padding: 85px 40px;
+    }
+
+    .sub-card {
+        min-height: 435px;
+        margin-bottom: 45px;
+        min-height: auto;
+    }
+
+    .who-we-are h3 {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .team-card {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card img {
+        min-height: 200px;
+        margin-bottom: 30px;
+        width: 65%;
+        object-fit: cover;
+    }
+
+    /* algo page style  */
+    .algo-banner-caption {
+        width: 75%;
+    }
+
+    .algo-banner-btm .benner-btm-card-img {
+        width: 100%;
+    }
+
+    .algo-about .algo-about-right h3 {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+
+    .algo-about .algo-about-right p {
+        font-size: 22px;
+        line-height: 35.017px;
+    }
+
+    .mob-center {
+        justify-content: center;
+    }
+
+    .feature-left {
+        width: 75%;
+        margin-bottom: 50px;
+    }
+
+    .flow-card ::after {
+        display: none;
+    }
+
+    .flow-card.last-card {
+        margin-top: 100px;
+    }
+
+    .owl-nav {
+        position: absolute;
+        left: 42%;
+        bottom: -5%;
+    }
+
+    .algo-banner {
+        background-size: 100%;
+        min-height: 100vh;
+        background-position: top right;
+        padding-top: -75px;
+        background-repeat: no-repeat;
+    }
+
+    .algo-banner-caption {
+        width: 100%;
+        background: #0000006e;
+        padding: 38px;
+        border-radius: 5px;
+    }
+
+    .algo-banner-caption p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-inner {
+        display: flex;
+        align-items: center;
+        height: 108vh;
+        padding-top: 260px;
+    }
+
+    .algo-banner-inner-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .contact-right img {
+        display: none;
+    }
+
+    .banner-caption {
+        padding-bottom: 0;
+    }
+
+    .banner-caption p {
+        margin-bottom: 20px;
+    }
+
+    .cmn-hd {
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+
+    .who-we-are h3 {
+        text-align: center;
+    }
+
+    .mrg-rght {
+        margin-right: 0;
+    }
+
+    .contct-abs-img {
+        opacity: 0.4;
+    }
+
+    .team-left-absolute {
+        opacity: 0.4;
+    }
+
+    .team-right-absolute {
+        opacity: 0.4;
+    }
+
+    /* algo  */
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        box-shadow: none;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 55px;
+    }
+
+    .accordion-button {
+        background-color: transparent;
+        box-shadow: none;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 55px;
+    }
+
+    .test-right {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .owl-nav {
+        position: absolute;
+        left: 16px;
+        bottom: -4%;
+    }
+
+    .owl-carousel .owl-item img.test-img {
+        display: block;
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .test-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .flow-card.second-card {
+        margin-top: 100px;
+    }
+
+    .flow-card img {
+        position: absolute;
+        top: -25px;
+        width: 120px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        transform: translate(120%, -50%);
+    }
+
+    .feature-card {
+        border-radius: 5px;
+        border: 1px solid #00B386;
+        padding: 25px 35px;
+        margin-bottom: 20px;
+    }
+
+    .feature-left {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .algo-about-right {
+        margin-top: 0;
+    }
+
+    .algo-banner-inner {
+        display: flex;
+        align-items: center;
+        height: 108vh;
+        padding-top: 260px;
+    }
+
+
+
+    .algo-banner-caption {
+        padding-bottom: 0;
+    }
+
+    .algo-banner-caption p {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .banner-inner {
+        display: flex;
+        align-items: center;
+        height: 98vh;
+        padding-top: 185px;
+    }
+
+    .algo-banner-caption h1 {
+        font-size: 35px;
+        line-height: 39px;
+        margin-bottom: 24px;
+    }
+
+    .algo-banner-inner {
+        display: flex;
+        align-items: center;
+        height: 80vh;
+        padding-top: 210px;
+    }
+
+    .nw-cmn-card {
+        min-height: auto;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .cmn-btn {
+        width: 55%;
+        font-size: 18px;
+        height: 55px;
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+
+    .algo-about .algo-about-right h3 {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 25px;
+    }
+
+    .algo-about .algo-about-right p {
+        font-size: 20px;
+        line-height: 30.017px;
+        margin-bottom: 20px;
+    }
+
+    .feature-left h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .feature-left p {
+        font-size: 20px;
+        line-height: 32.017px;
+    }
+
+    .sub-card {
+        margin-bottom: 30px;
+    }
+
+    .sub-card.last-subcard {
+        margin-bottom: 0px;
+    }
+
+    .feature-card h2 {
+        font-size: 35px;
+        margin: 20px 0;
+    }
+
+    .flow {
+        margin: 40px 0 30px 0;
+    }
+
+    .flow-card h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .flow-card.last-card {
+        margin-top: 25px;
+    }
+
+    .flow-card.second-card {
+        margin-top: 25px;
+    }
+
+    .flow-card p {
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .flow-card img {
+        display: none;
+    }
+
+    .flow-card {
+        border: 2px dashed #00B386;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 229px;
+        width: 80%;
+        padding: 30px;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .workshop {
+        padding-top: 0;
+    }
+
+    .workshp-hd {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .owl-carousel .owl-item .test-right img {
+        width: 70px;
+        margin-bottom: 20px;
+    }
+
+    .test-right p {
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35px;
+        padding: 0 15px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        margin-right: 15px;
+    }
+
+    .algo-testimonials {
+        margin: 50px 0;
+        margin-bottom: 80px;
+        position: relative;
+    }
+
+    .faq-hd {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 27px;
+    }
+
+    h2.accordion-header {
+        margin-top: 25px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        box-shadow: none;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 55px;
+    }
+
+    .accordion-button {
+        background-color: transparent;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 2px;
+        padding-left: 0;
+    }
+
+    h2.accordion-header {
+        margin-top: 5px;
+    }
+
+    .accordion-body {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 18px;
+    }
+
+    section.faq {
+        margin: 50px 0 0px 0;
+        position: relative;
+    }
+
+    h3.wrks-main-hd {
+        text-align: left;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 55px;
+        width: 62%;
+    }
+
+    .bg-box {
+        background: #000000ba;
+        padding: 30px;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    button.wrkshp-btn {
+        background: #00B386;
+        color: #fff;
+        width: 150px;
+        height: 45px;
+        font-weight: 600;
+        border-radius: 5px;
+        margin: 25px 30px;
+        border: none;
+    }
+.banner-inner {
+    display: flex;
+    align-items: center;
+    height: 108vh;
+    padding-top: 260px;
+}
+
+
+
+.banner-caption {
+    padding-bottom: 0;
+}
+
+.banner-caption p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.banner-inner {
+    display: flex;
+    align-items: center;
+    height: 98vh;
+    padding-top: 185px;
+}
+
+.banner-caption h1 {
+    font-size: 35px;
+    line-height: 39px;
+    margin-bottom: 24px;
+}
+
+.banner-inner {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    padding-top: 210px;
+}
+.abt-main-card p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.abt-main-card h4 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.abt-main-card {
+        padding: 62px 40px;
+}
+.abt-main-card a img {
+    margin-left: 6px;
+    width: 17px;
+}
+.abt-main-card a {
+    color: #00B386;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    float: right;
+    text-decoration: none;
+}
+.who-we-are {
+    background-image: url(../img/who-we-are-bg.png);
+    padding: 20px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.who-we-are h3 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+.mission-vison-card-wrap {
+    margin-top: 50px;
+}
+.mv-card h4 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.mv-card p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.mv-card .read-more {
+    color: #00B386;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.mv-card {
+    margin-bottom: 20px;
+}
+.our-tem-btm {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.our-team {
+    position: relative;
+    margin-bottom: 20px;
+}   
+.cmn-card-section {
+    background-image: url(../img/new-sec.png);
+    padding: 20px 0 80px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nw-cmn-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.nw-cmn-card {
+    padding: 40px 35px;
+    margin-bottom: 20px;
+}
+.cmn-card-section {
+    background-image: url(../img/new-sec.png);
+    padding: 20px 0 0px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section.contact {
+    background: #fff;
+    padding: 50px 0;
+    position: relative;
+}
+    /* 
+    .faq-hd {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 80px;
+    }
+
+    .accordion-button {
+        background-color: transparent;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 55px;
+        padding-left: 0;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        box-shadow: none;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    } */
+
+}
+
+@media (max-width: 426px) {
+/* 
+    .banner-caption h1 {
+        font-size: 45px;
+        line-height: 72px;
+        margin-bottom: 41px;
+        color: #fff;
+    }
+
+    .banner-inner {
+        display: flex;
+        align-items: center;
+        height: 98vh;
+        padding-top: 185px;
+    } */
+
+    .f-inner-right {
+        text-align: left;
+    }
+
+    .owl-carousel .owl-item img.test-img {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding-bottom: 80px;
+    }
+
+    .cmn-btn {
+        width: 85%;
+        font-size: 18px;
+        height: 55px;
+    }
+}
